@@ -1,0 +1,13 @@
+footer {
+    display: flex;
+    min-height: 10vh;
+    flex: 0 0 auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: $gray-500;
+    text-align: center;
+    align-items: center;
+    font-size: 1.2rem;
+  }
+

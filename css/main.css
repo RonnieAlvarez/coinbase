@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@400;700&family=Roboto:wght@400;700&display=swap");
+main h2, .rotuindex {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  border: 1px solid #ced4da;
+  max-width: fit-content; }
+
+/* formato utilizado en todos los archivos html */
+main {
+  min-height: 80vh; }
+  main h1 {
+    box-sizing: content-box; }
+  main h2 {
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 1.2rem !important; }
+    @media (max-width: 600px) {
+      main h2 {
+        font-size: 1.5rem !important; } }
+
+.rotuindex {
+  font-size: 1.2rem !important; }
+
+.centrar-horizontal {
+  margin: 0 auto; }
+
+.centrar-vetical {
+  margin: auto 0; }
+
+.btnindex {
+  background-color: #dee2e6 !important;
+  background-size: cover;
+  color: #343a40; }
+  .btnindex:hover {
+    background-color: #343a40 !important;
+    color: #dee2e6; }
+
+.card-title {
+  font-size: 1.5rem !important;
+  font-weight: 600; }
+
+header {
+  display: flex;
+  min-height: 10vh;
+  flex: 0 0 auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #adb5bd;
+  text-align: center;
+  align-items: center;
+  font-size: 1.2rem; }
+
+footer {
+  display: flex;
+  min-height: 10vh;
+  flex: 0 0 auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #adb5bd;
+  text-align: center;
+  align-items: center;
+  font-size: 1.2rem; }
+
+* {
+  margin: 0%;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  font-size: 100%; }
+
+html,
+body {
+  height: 100%; }
+
+/* cambia el color de la barra (scroller-bar) solo para webkit */
+body::-webkit-scrollbar {
+  width: 10px; }
+
+body::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #adb5bd; }
+
+body::-webkit-scrollbar-thumb {
+  background-color: #6c757d;
+  background-image: -webkit-linear-gradient(#212529 20%, #212529 80%);
+  border-radius: 10px; }
+
+/* hasta aqui es el codigo del cambio de color del scroller */
