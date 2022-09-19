@@ -1,0 +1,97 @@
+@mixin sec-display {
+    width: 100%;
+    max-width: 768px;
+    margin: auto;
+    padding: 5rem;
+
+}
+$color-pri: #0d6efd;
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+$green: #098551;
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 4rem;
+    border-bottom: 1px solid $gray-500;
+
+}
+
+.logo img{
+    max-width: 7rem;
+}
+
+.sec-home{
+    display: flex;
+    align-items: center;
+    @include sec-display;
+    .home-img{
+        margin-left: 5rem;
+        width: 30rem;
+    }
+    .home-cta{
+        flex: 1;
+        width: 50rem;
+
+        .cta-text{
+            color: $color-pri;
+            i {
+                font-weight:500; 
+            }
+        .home-title{
+            width: 20rem;
+            font-size: 3rem;
+        }
+        }
+    }
+}
+.sec-eter{
+    background-color: $black;
+    color: $white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    &-s{
+        display: flex;
+        flex-direction: column;
+    }
+    .title{
+        font-size: 2.5rem;
+        width: 25rem;
+        line-height: 1.2;
+    }
+}
+.icon-eter{
+    width: 25rem;
+    height: 25rem;
+    
+}
+sec-fetures{
+    @include sec-display;
+}
+
+.tableth:hover{
+        background-color: #e6e8eb3e;
+    }
+
+.sec-cta{
+    display: flex;
+    align-items: center;
+    @include sec-display;
+    max-width: 1000px;
+    padding: 0%;
+}    

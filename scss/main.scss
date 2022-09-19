@@ -1,32 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@400;700&family=Roboto:wght@400;700&display=swap");
-@import "./variables/colores";
-@import "./utilitarios/extends";
-@import "./secciones/main";
-@import "./secciones/header";
-@import "./secciones/footer";
+@import "globales";
+@import "componentes";
 
 * {
   margin: 0%;
   padding: 0;
-  font-family: "Roboto", sans-serif;
   box-sizing: border-box;
   font-size: 100%;
 }
 html,
 body {
   height: 100%;
+  
 }
-/* cambia el color de la barra (scroller-bar) solo para webkit */
-body::-webkit-scrollbar {
-  width: 10px;
-}
-body::-webkit-scrollbar-track {
-  border-radius: 10px;
-  background-color: $fondo-scroll;
-}
-body::-webkit-scrollbar-thumb {
-  background-color: $barra-scroll;
-  background-image:-webkit-linear-gradient($barra-scroll-fondo 20%,$barra-scroll-fondo 80%);
-  border-radius: 10px;
-}
-/* hasta aqui es el codigo del cambio de color del scroller */
+
