@@ -13,9 +13,9 @@
   display: flex;
   align-items: center;
   width: 100%;
-  max-width: 768px;
+  max-width: 893px;
   margin: auto;
-  padding: 5rem; }
+  padding: 3rem; }
   .sec-home .home-img {
     margin-left: 5rem;
     width: 30rem; }
@@ -31,13 +31,13 @@
         font-size: 3rem; }
 
 .sec-eter {
-  background-color: #000;
-  color: #fff;
-  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around; }
+  background-color: #000;
+  color: #fff;
+  justify-content: space-around;
+  width: 100%; }
   .sec-eter-s {
     display: flex;
     flex-direction: column; }
@@ -52,9 +52,9 @@
 
 sec-fetures {
   width: 100%;
-  max-width: 768px;
+  max-width: 893px;
   margin: auto;
-  padding: 5rem; }
+  padding: 3rem; }
 
 .tableth:hover {
   background-color: #e6e8eb3e; }
@@ -63,18 +63,128 @@ sec-fetures {
   display: flex;
   align-items: center;
   width: 100%;
-  max-width: 768px;
+  max-width: 893px;
   margin: auto;
-  padding: 5rem;
+  padding: 3rem;
   max-width: 1000px;
   padding: 0%; }
+
+.sec-features {
+  width: 100%;
+  max-width: 893px;
+  margin: auto;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .sec-features .intro {
+    text-align: center; }
+    .sec-features .intro h3 {
+      font-size: 1.8rem; }
+    .sec-features .intro p {
+      font-size: 0.8rem;
+      color: #ced4da; }
+    .sec-features .intro img {
+      max-width: 768px; }
+
+.ben-text {
+  color: #098551;
+  font-weight: 600; }
+
+.sec-ben {
+  width: 100%;
+  max-width: 893px;
+  margin: auto;
+  padding: 3rem; }
+
+.sec-onb {
+  width: 100%;
+  max-width: 893px;
+  margin: auto;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column; }
+  .sec-onb .fila {
+    display: flex;
+    flex-direction: row; }
+
+.icon-fetu {
+  margin-top: -8px;
+  flex-shrink: 0;
+  width: 72px;
+  height: 72px;
+  margin-right: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: #dae1e98f 0px 8px 16px; }
+
+.sec-onc {
+  width: 100%;
+  max-width: 893px;
+  margin: auto;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .sec-onc .tarj-box {
+    display: flex;
+    margin-top: 100px;
+    flex-direction: row; }
+    .sec-onc .tarj-box .tarj {
+      display: flex;
+      flex-direction: column;
+      width: calc((100% / 3) - 10px);
+      text-align: center;
+      align-items: center;
+      padding: 0 5px 0 5px; }
+      .sec-onc .tarj-box .tarj p {
+        height: 130px; }
+
+.sec-azul {
+  /*     @include sec-display(); */
+  display: flex;
+  flex-direction: row;
+  background-color: #0d6efd;
+  width: 100%;
+  color: #fff;
+  align-items: center;
+  /* max-width: 1180px; */
+  padding: 24px; }
+
+.sec-ond {
+  /* @include sec-display(); */
+  display: flex;
+  flex-direction: row;
+  height: 460px;
+  align-items: center;
+  width: 100%;
+  background-color: #F5F8FF; }
+
+.sec-footer {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+  .sec-footer figure {
+    border: 1px #cccccc solid;
+    padding: 4px;
+    margin: auto;
+    width: 150px; }
+  .sec-footer figcaption {
+    background-color: black;
+    color: white;
+    font-style: italic;
+    padding: 2px;
+    text-align: center; }
 
 .btn-pri, .btn-pri-s {
   padding: 0.25rem 1.5rem;
   border-radius: 0.25rem;
   background-color: #0d6efd;
   color: white;
-  border: solid 1px #0d6efd; }
+  border: solid 1px #0d6efd;
+  max-width: 12rem; }
   .btn-pri:hover, .btn-pri-s:hover {
     background-color: #fff;
     color: #0d6efd;
@@ -126,16 +236,22 @@ sec-fetures {
   width: 1.5rem; }
 
 .main-menu {
-  margin-bottom: 0%; }
+  margin-bottom: 0%;
+  height: 35px; }
   .main-menu li {
     list-style: none;
     font-size: 1rem;
-    display: inline; }
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    height: 30px;
+    line-height: 15px;
+    margin: 0 15px; }
     .main-menu li a {
       color: #000;
       text-decoration: none; }
       .main-menu li a:hover {
-        text-decoration: underline; }
+        border-bottom: #0d6efd solid 4px; }
 
 .icon-sm i {
   font-size: 00.75rem;
