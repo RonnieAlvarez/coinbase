@@ -20,13 +20,22 @@ $green: #098551;
 
 .nav {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-around;
   width: 100%;
   height: 4rem;
   border-bottom: 1px solid $gray-500;
+  @media (max-width:900px){
+    height: 12%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
-
+.botones{
+    display: flex;
+    flex-direction: row;
+}
 .logo img {
   max-width: 7rem;
 }
@@ -71,6 +80,9 @@ $green: #098551;
     font-size: 2.5rem;
     width: 25rem;
     line-height: 1.2;
+    @media  (max-width:900px) {
+        font-size:1.5rem;
+    }
   }
 }
 .icon-eter {
@@ -89,8 +101,13 @@ sec-fetures {
   display: flex;
   align-items: center;
   @include sec-display;
-  max-width: 1000px;
+  max-width: 75%; 
   padding: 0%;
+  table{
+    @media  (max-width:900px) {
+        width: 250px;
+    }    
+}
 }
 
 .sec-features {
@@ -118,6 +135,15 @@ sec-fetures {
 }
 .sec-ben {
   @include sec-display();
+  @media  (max-width:900px) {
+    font-size:0.7rem;
+    h3{
+        font-size:1.2rem;
+    } 
+    .btn-pri{
+        max-width: 7rem;
+    }
+}    
 }
 
 .sec-onb {
@@ -157,14 +183,27 @@ sec-fetures {
       text-align: center;
       align-items: center;
       padding: 0 5px 0 5px;
+      h3{
+        height: 4rem;
+        @media  (max-width:900px) {
+            height:6rem;
+        }    
+      }
       p {
-        height: 130px;
+        height: 8rem;
+        overflow: hidden;
+        @media  (max-width:900px) {
+            height:18rem;
+        }    
+        }
       }
     }
   }
-}
+
+
 .sec-azul {
   /*     @include sec-display(); */
+  
   display: flex;
   flex-direction: row;
   background-color: $color-pri;
@@ -172,21 +211,28 @@ sec-fetures {
   color: $white;
   align-items: center;
   /* max-width: 1180px; */
-  padding: 24px;
+  padding: 6rem 20vw;
 }
 
 .sec-ond {
-  /* @include sec-display(); */
+  @include sec-display();
   display: flex;
   flex-direction: row;
   height: 460px;
   align-items: center;
   width: 100%;
   background-color: #f5f8ff;
+  padding: 0%;
+  img{
+    width: 100%;
+    height: 100%;
+
+  }
 }
 .sec-footer {
   margin: 0;
   padding: 0;
+  padding: 6rem 25vw;
   box-sizing: border-box;
 
   figure {

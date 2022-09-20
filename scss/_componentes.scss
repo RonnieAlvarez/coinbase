@@ -43,6 +43,11 @@
   color: white;
   border: solid 1px #098551;
   max-width: 7rem;
+  @media (max-width:900px){
+    max-width: 4rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.7rem;
+  }
   &:hover {
     background-color: #10b36f;
     color: $white;
@@ -56,33 +61,43 @@
   align-items: center;
   background-color: $white;
   border-radius: 4rem;
-  width: 20rem;
+  width: 15rem;
   justify-content: space-around;
   max-width: 580px;
   font-weight: 700;
   &:hover {
-    background-color: $gray-200;
-  }
-  i {
-    font-size: 2rem;
-  }
+      background-color: $gray-200;
+    }
+    i {
+        font-size: 2rem;
+    }
 }
+
 .icon-btc {
   width: 1.5rem;
 }
-
+.menu{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
 .main-menu {
   margin-bottom: 0%;
-  height: 35px;
+  height: 4rem;
+  padding: 0%;
   li {
     list-style: none;
     font-size: 1rem;
     display: inline-flex;
     align-items: center;
     cursor: pointer;
-    height: 30px;
-    line-height: 15px;
+    height: 4rem;
     margin: 0 15px;
+    @media (max-width:900px){
+        height: 1.5rem;
+        margin: 0 1%;
+      }
     a {
       color: $black;
       text-decoration: none;
